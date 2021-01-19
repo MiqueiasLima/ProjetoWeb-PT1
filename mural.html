@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Mural de Mensagens</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos/estilosmural.css">
+    </head>
+    <body>
+
+        <script>
+
+            function ativarMensagem(){
+                var recebeNome = document.getElementById("nome").value;
+                var recebeMensagem = document.getElementById("mensagem").value;
+                
+                criaElemento(recebeNome,recebeMensagem);
+
+
+
+            }
+
+            function criaElemento(nome,mensagem){
+
+                var paragrafo = document.createElement('p');
+                var pulaLinha = document.createElement('br');
+                paragrafo.setAttribute('id','idP');
+                var texto1 = document.createTextNode(nome+":"+mensagem);
+                var botaoExcluir = document.createElement('button');
+                var textButton = document.createTextNode('Excluir');
+                botaoExcluir.appendChild(textButton);
+                var mural = document.querySelector('#sectionMural');
+                mural.appendChild(texto1);
+                mural.appendChild(botaoExcluir);
+                mural.appendChild(pulaLinha);
+
+                botaoExcluir.onclick = function(){
+                    texto1 = document.createTextNode(" ");
+                    mural.appendChild(texto1);
+                }
+
+            }
+
+
+        </script>
+
+        <section id="sectionMural">
+
+           <p>Deixe sua Mensagem</p><br>
+            Nome:
+            <input type="text" id="nome"><br>
+            Mensagem:
+            <input type="text" id="mensagem">
+            <button id="bttonEnviar" onclick="ativarMensagem()">Enviar</button>
+            <br>
+
+       
+        </section>
+    </body>
+
+</html>

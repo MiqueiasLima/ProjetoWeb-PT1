@@ -1,0 +1,19 @@
+#créditos_1{
+   
+    width: 790px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    background-color: rgb(240,232,225);
+    border: 8px solid orange;
+}
+
+#créditos_1 p{
+
+    color:black;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}

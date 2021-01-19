@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <title>Projeto PT-1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilos/estilos.css">
+
+    </head>
+    
+    <body>  
+        <script type="text/javascript">
+
+        function abrirMural(){
+            window.open('mural.html', 'popup', 'width=795, height=590, top=100, left=699,scrollbars=no, status=no, toolbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
+        }
+
+        function abrirPopUp() {
+            window.open('popup.html', 'popup', 'width=795, height=590, top=100, left=699,scrollbars=no, status=no, toolbar=no, location=no, menubar=no, resizable=no, fullscreen=no');
+        }
+
+        function mudaAmarelo(){
+            window.document.getElementById("div_1").style.background = "yellow";
+        }
+
+        function mudaVermelho(){
+            window.document.getElementById("div_1").style.background = "red";
+        }
+
+        function mudaLaranja(){
+            window.document.getElementById("div_1").style.background = "orange";
+        }
+
+        </script>
+        
+
+        <div id="div_1">
+
+            <div id="div_0">
+                <img src="imgs/logo_1.png" id="sparkLogo" alt="Spark_Logo" title="SparkLogo">
+                <a href="https://dribbble.com/shots/14953088-spark-marketing-page"><p>Sign up</p></a>
+            </div>
+
+
+            <h1 id="texto1">People Who<br>
+                            Care about<br>
+                            your grouth</h1>
+             
+            <div id="div_3">
+
+               <a href="https://dribbble.com/shots/14953088-spark-marketing-page"> <button class="botao_1">Get started</button></a>
+               <a href="https://dribbble.com/shots/14953088-spark-marketing-page"><p id="p2">Try platform for free</p></a> 
+
+            </div>                
+            <div id="div_4">
+
+                <img src="imgs/logo_2.png" id = "logo_2" title="Spark_Logo_2">
+
+            </div>
+
+
+        </div>
+
+        <div id="div_2">
+
+        <figure id="figuraFundo">
+
+            <img src="imgs/imgFundo_1.png" id="figura_fundo1">
+
+        </figure>
+        </div>
+
+        <div id="div_5">
+
+            <button class="botaoAmarelo" onclick="mudaAmarelo()">Amarelo</button>
+            <button class="botaoVermelho" onclick="mudaVermelho()">Vermelho</button>
+            <button class="botaoLaranja" onclick="mudaLaranja()">Laranja</button>
+            <button class="botaoMural" onclick="javascript:abrirMural()">Mural de Mensagens</button>   
+        </div>
+        
+        <footer id="rodapé">
+            <button class="créditos" onclick="javascript:abrirPopUp()">Créditos</button>
+
+        </footer>
+
+    </body>
+
+</html>

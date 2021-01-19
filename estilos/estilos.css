@@ -1,0 +1,157 @@
+body{
+
+    width: 120vw;
+    height: 120vh;
+    background-color: gray;
+    
+}
+
+.botao_1{
+
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    padding: 12px;
+    font-weight: 700;
+
+
+}
+
+#div_3{
+
+    display: flex;
+    margin-top: 80%;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+#div_4{
+
+    display: flex;
+    justify-content: end;
+    
+}
+
+#div_5{
+
+    position: absolute;
+
+}
+.botaoAmarelo{
+
+    background-color: yellow;
+
+}
+
+.botaoLaranja{
+    background-color: orange;
+}
+
+.botaoVermelho{
+
+    background-color: red;
+
+}
+
+
+
+#p2{
+    margin-left: 15px;
+}
+
+#div_0{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+   
+    
+}
+
+
+#div_0 p{
+
+    color: black;
+    font-size: 18px;
+    margin: 20px;
+    font-style: bold;
+}
+
+#texto1{
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+
+#div_1{
+
+    background-color: rgb(240,232,225);
+    width: 50vw;
+    height: 108vh;
+    float: left;
+    text-align: center;
+    position: relative;
+    
+
+}
+
+#div_2{
+
+    float: right;
+    background-attachment: fixed;
+    background-size: 100%;
+  
+}
+
+#figura_fundo1{
+
+    width: 50vw;
+    height: 108vh;
+    position: absolute;
+    right: -30px;
+    top: 5px;
+}
+
+#sparkLogo{
+
+    
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#rodapé{
+
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    top: 105vh;
+}
+
+
+.botaoMural{
+
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+}
+
+.créditos{
+
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    padding: 3px;
+    font-weight: 700; 
+
+}
+
+
+
